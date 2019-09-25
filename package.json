@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Responsive portfolio website",
   "main": "index.js",
+  "homepage": "https://Mnunley1.github.io/MyDevPortfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --resursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --resursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Malcolm Nunley",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0"
   }
 }
