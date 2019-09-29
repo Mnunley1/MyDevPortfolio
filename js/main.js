@@ -9,6 +9,25 @@ const navItems = document.querySelectorAll(".nav-item");
 let showMenu = false;
 menuBtn.addEventListener("click", toggleMenu);
 
+$(document).ready(function() {
+  VANTA.WAVES({
+    el: "#background",
+    color: 0x010101,
+    shininess: 100.0,
+    waveHeight: 20.0,
+    waveSpeed: 1.3,
+    zoom: 1.0
+  });
+
+  var typed = new Typed(".typed", {
+    strings: ["Web Developer.", "Programmer.", "Designer.", "Entrepreneur."],
+    typeSpeed: 70,
+    loop: true,
+    startDelay: 1000,
+    showCursor: true
+  });
+});
+
 function toggleMenu() {
   if (!showMenu) {
     menuBtn.classList.add("close");
@@ -30,3 +49,20 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+$("[data-fancybox]").fancybox();
+
+$("#filters a").click(function() {
+  $("#filters .current").removeClass("current");
+  $(this).addClass("current");
+  var selector = $(this).attr("data-filter");
+  $(".items").isotope({
+    filter: selector,
+    animationOptions: {
+      duration: 1500,
+      easing: "linear",
+      queue: false
+    }
+  });
+  return false;
+});
