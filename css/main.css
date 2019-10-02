@@ -57,14 +57,14 @@
       background: url("../img/IMG_3321e.jpg");
       background-size: cover;
       border-radius: 50%;
-      border: solid 5px #726004; }
+      border: solid 5px gold; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #726004; }
+      color: gold; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -75,7 +75,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #726004; }
+      color: gold; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -174,7 +174,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #726004; }
+  color: gold; }
 
 main {
   padding: 4rem;
@@ -187,7 +187,7 @@ main {
       padding: 0.4rem;
       transition: all 0.5s ease-out; }
       main .icons a:hover {
-        color: #726004; }
+        color: gold; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -196,7 +196,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 40px;
-  grid-template-areas: "bioimage bio bio" "skill job1 job1";
+  grid-template-areas: "bioimage bio bio" "job1 job1 skill";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -204,58 +204,115 @@ main {
     height: auto;
     margin: auto;
     border-radius: 50%;
-    border: #726004 3px solid; }
+    border: gold 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
   .about-info .job-1 {
-    grid-area: job1; }
+    grid-area: job1;
+    font-size: 1.5rem; }
+  .about-info .job-2 {
+    grid-area: skill;
+    font-size: 1.5rem; }
 
-.filter a {
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 10px 18px;
-  display: block; }
+._1fgQj {
+  padding: 1rem; }
 
-.filter li {
-  display: inline-block;
-  padding: 5px; }
+._2634o {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: capitalize;
+  display: block;
+  font-weight: 600;
+  transition: background-color 0.15s ease-in-out;
+  text-decoration: none;
+  padding: 10px;
+  color: #000000; }
 
-.filter .current {
-  background-color: #726004;
-  border-color: #726004;
-  color: #fff; }
+.x1MBX {
+  margin: 0.2rem 4px;
+  overflow: hidden;
+  border-radius: 3px;
+  text-align: center; }
 
-.filter {
-  text-align: center;
-  width: 100%; }
+._3TUA0 {
+  /*flex-basis: 140px;
+        max-width: 250px;*/
+  flex-grow: 1;
+  flex-shrink: 0;
+  opacity: 0.9; }
 
-.section .heading {
-  text-align: center;
-  padding-bottom: 40px;
-  width: 100%; }
-
-.items li {
-  display: inline-block;
-  padding: 5px; }
-
-.itemsContainer {
-  width: 100%; }
-
-.items li img {
+.R6-Wf {
+  flex-wrap: wrap;
+  display: flex;
+  overflow-x: visible;
   width: 100%;
-  -webkit-transition: all 0.2s linear, 1s;
-  -moz-transition: all 0.2s linear, 1s;
-  -o-transition: all 0.2s linear, 1s;
-  -ms-transition: all 0.2s linear, 1s;
-  -transition: all 0.2s linear, 1s; }
+  padding: 0 3px 0 3px;
+  overflow-y: hidden;
+  padding-right: 0.4rem; }
 
-.items .item {
+.R6-Wf::-webkit-scrollbar {
+  width: 0px;
+  height: 0px; }
+
+.R6-Wf::-webkit-scrollbar-thumb {
+  background-color: #555; }
+
+.R6-Wf div {
+  background: gold; }
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: #fff;
+  background-color: black;
+  border-width: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  outline: none;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s; }
+
+.button:hover {
+  color: gold; }
+
+.button:active,
+.button.is-checked {
+  border-bottom: 3px solid gold; }
+
+.button-group {
+  margin: 20px 0;
+  text-align: center; }
+
+.button-group:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+img {
+  vertical-align: middle; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.grid article {
+  display: block;
+  float: left;
+  margin: 1%;
+  width: 23%; }
+
+.item {
   position: relative;
   display: block;
   overflow: hidden; }
 
-.items .icons {
+.icons-p {
   position: absolute;
   width: 90px;
   height: 40px;
@@ -265,15 +322,16 @@ main {
   text-align: center;
   z-index: 3; }
 
-.items .icons i {
+.icons-p i {
   color: #fff;
   font-size: 20px;
-  margin-top: 9px; }
+  margin-top: 10px; }
 
-.items a {
+.icons-p a {
   width: 40px;
   height: 40px;
-  background-color: #726004;
+  background-color: gold;
+  border-radius: 5px;
   position: relative;
   display: inline-block;
   -webkit-transition: all 0.2s linear, 0.2s;
@@ -282,7 +340,7 @@ main {
   -ms-transition: all 0.2s linear, 0.2s;
   -transition: all 0.2s linear, 0.2s; }
 
-.items .imageOverlay {
+.imageOverlay {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -296,32 +354,29 @@ main {
   -ms-transition: all 0.2s linear, 1s;
   -transition: all 0.2s linear, 1s; }
 
-.items .item:hover .imageOverlay {
+.item:hover .imageOverlay {
   opacity: 1; }
 
-.items .openButton {
+.openButton {
   float: left;
-  left: -300px; }
+  left: -400px; }
 
-.items .projectLink {
+.projectLink {
   float: right;
-  right: -300px; }
+  right: -400px; }
 
-.items .item:hover .openButton {
+.item:hover .openButton {
   left: 0px; }
 
-.items .item:hover .projectLink {
+.item:hover .projectLink {
   right: 0px; }
 
-.items .item:hover img {
+.item:hover img {
   -webkit-transform: scale(1.05, 1.05);
   -moz-transform: scale(1.05, 1.05);
   -o-transform: scale(1.05, 1.05);
   -ms-transform: scale(1.05, 1.05);
   -transform: scale(1.05, 1.05); }
-
-.items {
-  padding: 0; }
 
 .boxes {
   display: flex;
@@ -337,10 +392,10 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #726004;
-      color: #fff; }
+      background: gold;
+      color: #000; }
       .boxes div:hover span {
-        color: #fff; }
+        color: #000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -348,8 +403,8 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #726004;
-    color: #fff; }
+    background: gold;
+    color: #000; }
 
 .btn-dark {
   background: black;
@@ -366,13 +421,9 @@ main {
   color: #fff;
   height: 60px; }
 
-@media screen and (min-width: 1171px) {
-  .projects {
-    grid-template-columns: repeat(4, 1fr); } }
-
 @media screen and (min-width: 769px) and (max-width: 1170) {
-  .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+  .grid article {
+    width: 31.3%; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -402,10 +453,10 @@ main {
       width: 200px;
       height: 200px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "skill" "skill" "job1";
     grid-template-columns: 1fr; }
-  .projects {
-    grid-template-columns: repeat(2, 1fr); }
+  .grid article {
+    width: 48%; }
   .boxes div {
     padding-left: 30px;
     padding-right: 30px; } }
@@ -421,5 +472,6 @@ main {
   .boxes div {
     padding-left: 10px;
     padding-right: 10px; }
-  .projects {
-    grid-template-columns: 1fr; } }
+  .grid article {
+    margin: 2% 0;
+    width: 100%; } }
