@@ -1,13 +1,10 @@
 // Widescreens
 @include mediaXl {
-  .projects {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 // Desktops & Laptops
 @include mediaLg {
-  .projects {
-    grid-template-columns: repeat(3, 1fr);
+  .grid article {
+    width: 31.3%;
   }
 }
 // Tablets & Small Laptops
@@ -55,15 +52,15 @@
     grid-template-areas:
       "bioimage"
       "bio"
-      "job1"
-      "job2"
-      "job3";
+      "skill"
+      "skill"
+      "job1";
 
     grid-template-columns: 1fr;
   }
 
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
+  .grid article {
+    width: 48%;
   }
 
   .boxes div {
@@ -91,7 +88,8 @@
     padding-right: 10px;
   }
 
-  .projects {
-    grid-template-columns: 1fr;
+  .grid article {
+    margin: 2% 0;
+    width: 100%;
   }
 }

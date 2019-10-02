@@ -12,7 +12,7 @@ menuBtn.addEventListener("click", toggleMenu);
 $(document).ready(function() {
   VANTA.WAVES({
     el: "#background",
-    color: 0x010101,
+    color: 0x020000,
     shininess: 100.0,
     waveHeight: 20.0,
     waveSpeed: 1.3,
@@ -50,19 +50,40 @@ function toggleMenu() {
   }
 }
 
-$("[data-fancybox]").fancybox();
-
-$("#filters a").click(function() {
-  $("#filters .current").removeClass("current");
-  $(this).addClass("current");
-  var selector = $(this).attr("data-filter");
-  $(".items").isotope({
-    filter: selector,
-    animationOptions: {
-      duration: 1500,
-      easing: "linear",
-      queue: false
-    }
+$(function() {
+  var $grid = $(".grid").isotope({
+    itemSelector: "article"
   });
-  return false;
+
+  // filter buttons
+  $(".filters-button-group").on("click", "button", function() {
+    var filterValue = $(this).attr("data-filter");
+    $grid.isotope({ filter: filterValue });
+  });
+  $(".button-group").each(function(i, buttonGroup) {
+    var $buttonGroup = $(buttonGroup);
+    $buttonGroup.on("click", "button", function() {
+      $buttonGroup.find(".is-checked").removeClass("is-checked");
+      $(this).addClass("is-checked");
+    });
+  });
+});
+
+// debounce so filtering doesn't happen every millisecond
+function debounce(fn, threshold) {
+  var timeout;
+  return function debounced() {
+    if (timeout) {
+      clearTimeout(timeout);
+    }
+    function delayed() {
+      fn();
+      timeout = null;
+    }
+    timeout = setTimeout(delayed, threshold || 100);
+  };
+}
+
+$(window).bind("load", function() {
+  $("#all").click();
 });
