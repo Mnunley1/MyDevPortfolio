@@ -60,13 +60,27 @@
         This is how you can reach me...
       </h2>
       <div class="boxes">
-        <div>
-          <a href="mailTo:mxnunley1@gmail.com" class="contactButton"
-            >mxnunley1@gmail.com
-          </a>
-          <!-- <span class="text-secondary">Email:</span> mxnunley1@gmail.com -->
+        <div class="container">
+          <form method="POST" action="send.php">
+            <div><label>Your Name:</label></div>
+            <div><input type="text" name="myName" class="form-control" /></div>
+            <div><label>Your Email:</label></div>
+            <div><input type="text" name="myEmail" class="form-control" /></div>
+
+            <div><label>Message:</label></div>
+            <div>
+              <textarea
+                cols="40"
+                rows="5"
+                name="myMessage"
+                class="form-control"
+              ></textarea>
+            </div>
+            <div class="float-right mt-2">
+              <input type="submit" value="Send" class="btn btn-primary" />
+            </div>
+          </form>
         </div>
-        <!-- <div><span class="text-secondary">Phone:</span> 919-539-8152</div> -->
       </div>
     </main>
 

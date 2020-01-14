@@ -31,12 +31,12 @@
   }
 
   .menu-nav {
-    height: 65vh;
+    height: 100vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
 
-  .menu-branding {
+  /* .menu-branding {
     height: 35vh;
     transform: translate3d(100%, 0, 0);
 
@@ -46,7 +46,7 @@
       width: 200px;
       height: 200px;
     }
-  }
+  } */
 
   .about-info {
     grid-template-areas:
@@ -71,6 +71,10 @@
 
 // Smartphones
 @include mediaSm {
+  #bg-img {
+    background-size: cover;
+  }
+
   main {
     padding: 2rem;
     #home h1 {
@@ -90,6 +94,10 @@
 
   .grid article {
     margin: 2% 0;
+    width: 100%;
+  }
+
+  .container {
     width: 100%;
   }
 }

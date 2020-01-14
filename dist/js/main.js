@@ -10,9 +10,9 @@ let showMenu = false;
 menuBtn.addEventListener("click", toggleMenu);
 
 $(document).ready(function() {
-  VANTA.WAVES({
+  /* VANTA.WAVES({
     el: "#background",
-    color: 0x020000,
+    color: 0x3aafa9,
     shininess: 100.0,
     waveHeight: 20.0,
     waveSpeed: 1.3,
@@ -25,7 +25,7 @@ $(document).ready(function() {
     loop: true,
     startDelay: 1000,
     showCursor: true
-  });
+  }); */
 });
 
 function toggleMenu() {
