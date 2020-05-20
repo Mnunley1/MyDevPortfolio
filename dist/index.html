@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.11.1/css/all.css"
       integrity="sha384-IT8OQ5/IfeLGe8ZMxjj3QQNqT0zhBJSiFCL3uolrGgKRuenIU+mMS94kck/AHZWu"
@@ -14,71 +24,50 @@
     <title>Welcome to My Portfolio</title>
   </head>
 
-  <body id="bg-img">
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+  <body>
+    <main>
+      <div class="container mb-5">
+        <h1 class="display-4">Hi, I'm <span class="gold">Malcolm</span></h1>
+        <p>
+          A full stack developer living in Raleigh, North Carolina. I love to run
+          fast and drive faster.
+        </p>
       </div>
-
-      <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
-        </div>
-        <ul class="menu-nav">
-          <li class="nav-item current">
-            <a href="index.html" class="nav-link">
-              Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">
-              About Me
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="work.html" class="nav-link">
-              My Work
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">
-              Contact Me
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main id="home">
-      <h1 class="home-h1">
-        Malcolm
-      </h1>
-      <h2 class="sm-heading">
-        <div class="type">
-          <p class="sub typed"></p>
-        </div>
-      </h2>
-      <br />
-      <!-- <div class="icons">
-        <a href="#!">
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
-        <a href="#!">
-          <i class="fab fa-facebook fa-2x"></i>
-        </a>
-        <a href="http://www.linkedin.com/in/malcolmxnunley">
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-        <a href="https://github.com/Mnunley1">
-          <i class="fab fa-github fa-2x"></i>
-        </a>
-      </div> -->
+      <div class="container mb-5">
+        <h1 class="gold">Projects</h1>
+      </div>
+      <div class="container mb-5">
+        <h1 class="gold">Resume</h1>
+      </div>
+      <div class="container">
+        <h1 class="gold">Contact</h1>
+        <form>
+          <div class="form-group col-md-8 p-0">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="email" class="form-control" />
+          </div>
+          <div class="form-group col-md-8 p-0">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" />
+          </div>
+          <div class="form-group col-md-8 p-0">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="2"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold">Send Message</button>
+        </form>
+      </div>
     </main>
 
-    <script src="js/three.r92.min.js"></script>
-    <script src="js/vanta.waves.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+      integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="js/main.js"></script>
