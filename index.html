@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.11.1/css/all.css"
       integrity="sha384-IT8OQ5/IfeLGe8ZMxjj3QQNqT0zhBJSiFCL3uolrGgKRuenIU+mMS94kck/AHZWu"
@@ -14,72 +24,160 @@
     <title>Welcome to My Portfolio</title>
   </head>
 
-  <body id="background">
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+  <body>
+    <main>
+      <div class="row">
+        <img
+          src="img/mn logo.png"
+          class="mx-auto mb-4"
+          style="width: 200px; height: auto;"
+        />
       </div>
-
-      <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
+      <div class="container mb-5">
+        <h1 class="display-4">Hi, I'm <span class="gold">Malcolm</span></h1>
+        <p>
+          A full stack developer living in Raleigh, North Carolina. I love to run
+          fast🏃‍♂️(former collegiate sprinter) and drive faster🏎️.
+        </p>
+        <p>Currently training for the Tokyo Olympic Games🥇.</p>
+      </div>
+      <div class="container mb-5">
+        <h1 class="gold mb-4">Projects</h1>
+        <img
+          src="img/shotsnapp-1592918873.539.png"
+          class="card-img-top"
+          style="width: 100%; height: auto;"
+          alt="React Chat App"
+        />
+        <div class="col-12 pl-0 mb-4">
+          <p class="text-muted m-0">
+            View Project
+            <a href="https://quickchatapp.netlify.app/"
+              ><i class="fas fa-external-link-alt text-muted"></i
+            ></a>
+          </p>
+          <p class="text-muted m-0">React chat app using Socket.io</p>
         </div>
-        <ul class="menu-nav">
-          <li class="nav-item current">
-            <a href="index.html" class="nav-link">
-              Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">
-              About Me
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="work.html" class="nav-link">
-              My Work
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">
-              Contact Me
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main id="home">
-      <h1 class="lg-heading">
-        Malcolm
-        <span class="text-secondary">Nunley</span>
-      </h1>
-      <h2 class="sm-heading">
-        <div class="type">
-          <p class="sub typed"></p>
+        <img
+          src="img/shotsnapp-1592916610.397.png"
+          class="card-img-top"
+          style="width: 100%; height: auto;"
+          alt="..."
+        />
+        <div class="col-12 pl-0 mb-4">
+          <p class="text-muted m-0">
+            View Project
+            <a href="https://lyrically-finder.netlify.app/"
+              ><i class="fas fa-external-link-alt text-muted"></i
+            ></a>
+          </p>
+          <p class="text-muted m-0">Lyric finder using React and Musixmatch API</p>
         </div>
-      </h2>
-      <br />
-      <div class="icons">
-        <!-- <a href="#!">
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
-        <a href="#!">
-          <i class="fab fa-facebook fa-2x"></i>
-        </a> -->
-        <a href="http://www.linkedin.com/in/malcolmxnunley">
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-        <a href="https://github.com/Mnunley1">
-          <i class="fab fa-github fa-2x"></i>
-        </a>
+        <img
+          src="img/shotsnapp-1592918798.99.png"
+          class="card-img-top"
+          style="width: 100%; height: auto;"
+          alt="..."
+        />
+        <div class="col-12 pl-0 mb-4">
+          <p class="text-muted m-0">
+            View Project
+            <a href="https://expense-application-mern.herokuapp.com/"
+              ><i class="fas fa-external-link-alt text-muted"></i
+            ></a>
+          </p>
+          <p class="text-muted m-0">Expense tracker developed with the MERN stack</p>
+        </div>
+        <img
+          src="img/shotsnapp-1592919199.408.png"
+          class="card-img-top"
+          style="width: 100%; height: auto;"
+          alt="..."
+        />
+        <div class="col-12 pl-0 mb-4">
+          <p class="text-muted m-0">
+            View Project
+            <a href="https://exercise-tracker-mern-server.herokuapp.com/"
+              ><i class="fas fa-external-link-alt text-muted"></i
+            ></a>
+          </p>
+          <p class="text-muted m-0">Exercise traking app built on the MERN stack</p>
+        </div>
+      </div>
+      <div class="container mb-5">
+        <h1 class="mb-3 gold">Resume</h1>
+        <h3>Work</h3>
+        <div class="row">
+          <div class="col-md-5">
+            <p class="text-muted m-0">
+              NineOneNine Media
+              <a href="https://nineoneninemedia.com/"
+                ><i class="fas fa-external-link-alt text-muted"></i
+              ></a>
+            </p>
+            <p class="text-muted m-0">Lead Developer</p>
+            <p class="text-muted m-0">2019-Present</p>
+          </div>
+          <div class="col-md-5">
+            <p class="text-muted m-0">
+              Allied Telecom
+              <a href="https://www.alliedtelecom.net/"
+                ><i class="fas fa-external-link-alt text-muted"></i
+              ></a>
+            </p>
+            <p class="text-muted m-0">Web Developer</p>
+            <p class="text-muted m-0">2018-2019</p>
+          </div>
+        </div>
+        <h3 class="mt-3">Skills</h3>
+        <p class="text-muted m-0">
+          HTML, CSS, Sass, JavaScript, Python
+        </p>
+        <p class="text-muted m-0">
+          Bootstrap, React, Django
+        </p>
+        <p class="text-muted m-0">
+          Verstion Control/GIT
+        </p>
+        <p class="text-muted m-0">
+          SQL/Databases
+        </p>
+      </div>
+      <div class="container">
+        <h1 class="gold">Contact</h1>
+        <form action="https://formspree.io/xwkrvwnq" method="POST">
+          <div class="form-group col-md-8 p-0">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="text" name="name" class="form-control" />
+          </div>
+          <div class="form-group col-md-8 p-0">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="text" name="_replyto" class="form-control" />
+          </div>
+          <div class="form-group col-md-8 p-0">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea
+              class="form-control"
+              name="message"
+              id="exampleFormControlTextarea1"
+              rows="2"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold">Send Message</button>
+        </form>
+        <a href="https://github.com/Mnunley1?tab=repositories"
+          ><i class="fab fa-github pt-2 text-white"></i></a
+        ><a href="https://www.linkedin.com/in/malcolmxnunley/"
+          ><i class="fab fa-linkedin pl-2 text-white"></i
+        ></a>
       </div>
     </main>
 
-    <script src="js/three.r92.min.js"></script>
-    <script src="js/vanta.waves.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+      integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="js/main.js"></script>
